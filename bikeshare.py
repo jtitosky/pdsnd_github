@@ -61,8 +61,7 @@ def get_filters():
              or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # get user input for city (chicago, new york city, washington).
-    
+    # Get user input for city (chicago, new york city, washington).
     # Generate properly formatted question for city user input query
     city_query = "\nWhich city would you like data for? ("
     cities_ordered = sorted(CITY_DATA.keys())
@@ -86,7 +85,6 @@ def get_filters():
             if confirmation == "y":
                 break
         # Get user input for month (all, january, february, ... , june)
-        
         months = ["january","february","march","april","may","june","july",\
         "august","september","october","november","december", "all"]
         months_short = ["jan","feb","mar","apr","may","jun","jul","aug","sep",\
@@ -101,7 +99,6 @@ def get_filters():
                     month.upper()))
             if confirmation == "y":
                 break
-
         # Get user input for day of week (all, monday, tuesday, ... sunday)
         days = ["sunday","monday","tuesday","wednesday","thursday","friday",\
             "saturday", "all"]
@@ -117,7 +114,6 @@ def get_filters():
             if confirmation == "y":
                 break
 
-        
         print("\nYour current selection is:")
         print("  City: {}".format(city.title()))
         print("  Month: {}".format(month.title()))
@@ -145,7 +141,7 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     new_query_needed = False
-    # load data file into a dataframe
+    # Load data file into a dataframe
     df = pd.read_csv(CITY_DATA[city])
 
     # Convert the Start Time column to datetime
@@ -164,7 +160,7 @@ def load_data(city, month, day):
         months = ['january', 'february', 'march', 'april', 'may', 'june',\
         'july', 'august', 'september', 'october', 'november', 'december']
         month = months.index(month) + 1
-    
+
         # Get months in dataset
         months_available = sorted(df.month.unique())
         if month not in months_available:
@@ -333,7 +329,7 @@ def user_stats(df):
 def disp_raw_data(df,increment=5):
     """
     Displays raw data from the passed dataframe
-    
+
     Args:
         (df) df - dataframe being viewed
         (int) increment - the amount of lines to display at a time
@@ -373,7 +369,7 @@ def main():
         conf = query_user("\nWould you like to see the raw data? [Y/N]: ")
         if conf == "y":
             disp_raw_data(df)
-        
+
         conf = query_user("\nWould you like to restart? [Y/N]: ")
         if conf == "n":
             break
