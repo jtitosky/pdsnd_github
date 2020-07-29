@@ -18,3 +18,5 @@ Special thanks to udacity instructors Derek Steer, Juno Lee, Karl Krueger, Richa
 
 ### Requirements
 - Python 3.6.3
+- Pandas 0.23.3
+- Numpy 1.12.1
