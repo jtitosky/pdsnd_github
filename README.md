@@ -15,3 +15,6 @@ This project analyzes bike sharing data from three cities. (Chicago, Washington 
 
 ### Credits
 Special thanks to udacity instructors Derek Steer, Juno Lee, Karl Krueger, Richard Kalehoff and Ruchi Bhanot
+
+### Requirements
+- Python 3.6.3
