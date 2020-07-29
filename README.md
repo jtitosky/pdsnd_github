@@ -1,15 +1,17 @@
 ### Date created
-Include the date you created this project and README file.
+2020-07-29
 
 ### Project Title
-Replace the Project Title
+Udacity - Programing for Data Science with Python - Project 2
 
 ### Description
-Describe what your project is about and what it does
+This project analyzes bike sharing data from three cities. (Chicago, Washington and New York City). 
 
 ### Files used
-Include the files used
+- bikeshare.py
+- chicago.csv
+- new_york_city.csv
+- washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Special thanks to udacity instructors Derek Steer, Juno Lee, Karl Krueger, Richard Kalehoff and Ruchi Bhanot
